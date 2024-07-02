@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoTrip</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo"> <a href="index.html">Tickethack</a></h2>
+        <div class="links">
+            <a href="cart.html">Cart</a>
+            <a href="booking.html">Bookings</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="presentation">
+            <h1>Explore the world effortlessmy by train!</h1>
+            <h2>Compare, book and enjoy cheap prices for train tickets: your journey starts on Tickethack</h2>
+        </div>
+        <div class="cards">
+            <div class="searchForm">
+                <input type="text" id="departure" name="departure" placeholder="Departure">
+                <input type="text" name="arrival" id="arrival" placeholder="Arrival">
+                <input type="date" name="tripsDate" id="tripsDate">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div class="tripsResult">
+                <div class="empty">
+                    <img src="images/train.png" alt="">
+                    <span>it's time to book your future trips</span>
+                </div>
+                <div class="false">
+                    <img src="images/notfound.png" alt="">
+                    <span>No trip found</span>
+                </div>
+                <!-- <div class="trip">
+                    <span>Paris > Lyon</span>
+                    <span>17:07</span>
+                    <span>83€</span>
+                    <button>book</button>
+                </div>
+                <div class="trip">
+                    <span>Paris > Lyon</span>
+                    <span>17:07</span>
+                    <span>83€</span>
+                    <button>book</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
