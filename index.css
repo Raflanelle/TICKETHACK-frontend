@@ -29,7 +29,7 @@ header{
 
 .container{
     height: 92vh;
-    background-image: url('../TICKETHACK-frontend/images/background.jpg');
+    background-image: url('../frontend/images/background.jpg');
     background-size: cover;
     background-position: center;
 }
