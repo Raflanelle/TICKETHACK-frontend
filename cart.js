@@ -22,10 +22,11 @@ function Carts() {
                 }
                 document.querySelector('.total').innerHTML += `
             <div class="bookfooter">
-                <p class='sum'>Total : ${total}€</p>
+                <span class='sum'>Total : ${total}€</span>
                 <button id='purchase'>Purchase</button>
             </div>
             `
+            
 
                 const btnDel = document.querySelectorAll('.delete');
                 for (let i = 0; i < btnDel.length; i++) {

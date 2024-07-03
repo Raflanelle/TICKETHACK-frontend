@@ -27,23 +27,18 @@ header{
 
 #container{
     height: 92vh;
-    display: grid;
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-columns: repeat(12, 1fr);
-    
-    border: 1px solid #8b0303;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     background-color: #eff2f1;
 }
 
 #panier{
     min-height: 260px;
     max-height: 600px;
-    grid-row-start: 6;
-    grid-row-end: 9;
-    grid-column-start: 4;
-    grid-column-end: 10;
     display: none;
-    border: 1px solid #8b0303;
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
@@ -51,33 +46,29 @@ header{
     
 }
 
-span{
+#panier span{
     margin-top: 7%;
     font-size: 22px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #achat{
-    min-height: 260;
-    max-height: 600px;
-    /* grid-row-start: 6; */
-    grid-row-end: 9;
-    grid-column-start: 4;
-    grid-column-end: 10;
+    width: 60%;
     display: flex;
-    border: 1px solid #8b0303;
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
     background-color: #ffffff;
 }
 
+.content{
+    width: 85%;
+}
+
 #travel{
     height: 205;
-    width: 85%;
     display: flex;
     flex-direction: row;
-    border: 1px solid #8b0303;
     justify-content: space-between;
     padding-left: 2%;
     border-radius: 5px;
@@ -94,21 +85,27 @@ span{
     margin-right: 17px;
     border-radius: 5px;
     background-color: #459e85;
+    color: white;
+    border: none;
 }
 
-#total{
-    
-    height: 60px;
+.total{
+    height: 70px;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    border: 1px solid #8b0303;
-    justify-content: space-between;
     border-radius: 0 0 20px 20px;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #00153e;
 }
+
+.bookfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
 .sum{
     margin-left: 5%;
     color: #ffffff;
@@ -117,8 +114,8 @@ span{
 #purchase{
     height: 30px;
     width: 80px;
-    margin-top: 17px;
-    margin-right: 5%; 
     border-radius: 5px;
     background-color: #459e85;
+    color: white;
+    border: none;
 }

@@ -8,7 +8,7 @@ document.querySelector('#searchBtn').addEventListener('click', function () {
     const falseDiv = document.querySelector(".false");
     const empty = document.querySelector(".empty");
 
-    if (departure === "" || tripsDate === "") {
+    if (departure === "" || arrival === "" || tripsDate === "") {
         falseDiv.style.display = "flex";
         empty.style.display = "none";      
     } else {
