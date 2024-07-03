@@ -16,7 +16,8 @@ document.querySelector('#searchBtn').addEventListener('click', function () {
         empty.style.display = "none";
    
 
-    fetch(`http://localhost:3000/trips?departure=${departure}&arrival=${arrival}&date=${tripsDate}`)
+    fetch(`
+https://tickethack-frontend-gilt.vercel.app/trips?departure=${departure}&arrival=${arrival}&date=${tripsDate}`)
     .then(response => response.json())
     .then(data => {
         document.querySelector('.tripsResult').innerHTML = '';
@@ -38,7 +39,8 @@ document.querySelector('#searchBtn').addEventListener('click', function () {
             let btnBook = document.querySelectorAll(".sendCart")
             for (let i = 0; i < btnBook.length; i++) {
                 btnBook[i].addEventListener("click", () => {
-                    fetch(`http://localhost:3000/carts`, {
+                    fetch(`
+https://tickethack-frontend-gilt.vercel.app/carts`, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json'},
                         body: JSON.stringify({id: btnBook[i].value})

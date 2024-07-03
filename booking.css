@@ -67,11 +67,9 @@ span{
     flex-direction: column;
     border-radius: 20px;
     background-color: #ffffff;
+    
 }
 
-.bookContent{
-    width: 80%;
-}
 
 #avenir{
     text-align: center;
@@ -85,6 +83,7 @@ span{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #f5eeee;
     margin-bottom: 2%;
+    
 }
 
 .ligne{
