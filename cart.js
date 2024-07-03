@@ -1,6 +1,5 @@
 function Carts() {
-    fetch(`
-https://tickethack-frontend-gilt.vercel.app/carts`)
+    fetch(`https://tickethack-backend-six-sepia.vercel.app/carts`)
         .then(response => response.json())
         .then(data => {
             document.querySelector('.content').innerHTML = ``;
@@ -32,8 +31,7 @@ https://tickethack-frontend-gilt.vercel.app/carts`)
                 const btnDel = document.querySelectorAll('.delete');
                 for (let i = 0; i < btnDel.length; i++) {
                     btnDel[i].addEventListener("click", () => {
-                        fetch(`
-https://tickethack-frontend-gilt.vercel.app//carts/${btnDel[i].value}`, {
+                        fetch(`https://tickethack-backend-six-sepia.vercel.app/carts/${btnDel[i].value}`, {
                             method: "DELETE",
                             headers: { "Content-Type": "application/json" }
                         })
@@ -47,15 +45,13 @@ https://tickethack-frontend-gilt.vercel.app//carts/${btnDel[i].value}`, {
 
                 const btnPurchase = document.querySelector('#purchase');
                 btnPurchase.addEventListener('click', () => {
-                    fetch(`
-https://tickethack-frontend-gilt.vercel.app//booking`, {
+                    fetch(`https://tickethack-backend-six-sepia.vercel.app/booking`, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' }
                     })
                         .then(response => response.json())
                         .then(data => {
-                            fetch(`
-https://tickethack-frontend-gilt.vercel.app/carts`, {
+                            fetch(`https://tickethack-backend-six-sepia.vercel.app/carts`, {
                                 method: "DELETE",
                                 headers: { "Content-Type": "application/json" }
                             })

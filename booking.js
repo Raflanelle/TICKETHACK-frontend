@@ -1,6 +1,6 @@
 //récupère et met à jour sur booking.html les données du get
 fetch(`
-https://tickethack-frontend-gilt.vercel.app/booking`).then(response => response.json())
+https://tickethack-backend-six-sepia.vercel.app/booking`).then(response => response.json())
     .then(data => {
         document.querySelector('#booking').style.display = "none";
         document.querySelector('#validation').innerHTML = ``;
