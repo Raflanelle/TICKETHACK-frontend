@@ -1,6 +1,4 @@
-//la date minimale de input date est égale a aujourd'hui 
-var today = new Date().toISOString().split('T')[0];
-document.getElementById('tripsDate').setAttribute('min', today);
+
 
 // affichage des trips selon les parameteres departure arrival et date
 document.querySelector('#searchBtn').addEventListener('click', function () {
